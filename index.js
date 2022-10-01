@@ -10,7 +10,7 @@ const userRouter = require('./routes/user');
 
 
 // Init
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 const DB ="mongodb+srv://mustafa:mustafa@cluster0.jb9lj.mongodb.net/?retryWrites=true&w=majority";
 
